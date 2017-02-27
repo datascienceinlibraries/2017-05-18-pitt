@@ -2,11 +2,11 @@
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
 carpentry: "lc"    # what kind of Carpentry (must be either "dc" or "swc")
-venue: "DS4L IMLS Workshop"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+venue: "Data Science for Libraries Workshop"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Digital Scholarship Commons, Hillman Library, 3960 Forbes Ave #271, Pittsburgh, PA 15260"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+latlng: "40.4425525,-79.9541138"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "May 18, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "8:30 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2017-05-18      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -191,9 +191,10 @@ Library Carpentry is in the commons and for the commons. It is not tied to any i
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 
-<div class="row">
 
-  <h3>Day 1</h3>
+<div>
+
+  <h3>Timetable</h3>
 <table class="table table-striped", width="450">
   <tr> <td>08:30</td> <td>Coffee and setup</td></tr>
   <tr> <td>08:30</td> <td>Data intro</td></tr>
@@ -289,12 +290,11 @@ Library Carpentry is in the commons and for the commons. It is not tied to any i
   <div class="col-md-6">
     <h3 id="syllabus-r">Open Refine</h3>
     <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_pages}}/r-novice-inflammation/reference/">Reference...</a></li>
+      <li>Introduction to OpenRefine</li>
+      <li>Importing data</li>
+      <li>Basic functions</li>
+      <li>Advanced Functions</li>
+      <li><a href="{{site.lc_pages}}/library-openrefine/">Reference...</a></li>
     </ul>
   </div>
   <!--
@@ -473,73 +473,11 @@ Library Carpentry is in the commons and for the commons. It is not tied to any i
   </div>
 </div> <!-- End of 'shell' section. -->
 
-<div id="editor"> <!-- Start of 'editor' section. -->
-  <h3>Text Editor</h3>
-
-  <p>
-    When you're writing code, it's nice to have a text editor that is
-    optimized for writing code, with features like automatic
-    color-coding of key words.  The default text editor on Mac OS X and
-    Linux is usually set to Vim, which is not famous for being
-    intuitive.  if you accidentally find yourself stuck in it, try
-    typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
-    exclamation mark), then hitting Return to return to the shell.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="editor-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        To install it,
-        download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
-        and double click on the file to run it.
-        <strong>This installer requires an active internet connection.</strong>
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="http://notepad-plus-plus.org/">Notepad++</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-        <strong>Be aware that you must
-          add its installation directory to your system path.</strong>
-        Please ask your instructor to help you do this.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="editor-macosx">Mac OS X</h4>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-        for an example on how to open nano.
-        It should be pre-installed.
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="editor-linux">Linux</h4>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It should be pre-installed.
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
-        <a href="http://kate-editor.org/">Kate</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'editor' section. -->
 <div id="of"> <!-- Start of 'SQLite' section. -->
   <h3>Open Refine</h3>
   <p>You need to download and install OpenRefine and download a data file to follow this lesson.</p>
   <h4 id="downloading-openrefine">Downloading OpenRefine</h4>
-  <p>You can download OpenRefine from http://openrefine.org/download.html. There are two versions you can use for this lesson:</p>
+  <p>You can download OpenRefine from <a href="http://openrefine.org/download.html">http://openrefine.org/download.html</a>. There are two versions you can use for this lesson:</p>
   <ul>
   <li>Google Refine 2.5</li>
   <li>OpenRefine 2.6 RC2</li>
@@ -556,7 +494,7 @@ Library Carpentry is in the commons and for the commons. It is not tied to any i
   <li>On Linux: Navigate to the folder where you’ve installed OpenRefine in a terminal window and type ‘./refine’</li>
   <li>On Mac: Navigate to where you installed OpenRefine and click the OpenRefine icon</li>
   </ul>
-  <p>The interface to OpenRefine is accessed via a web browser. When you run Refine normally this should open a window in your default web browser pointing at the address http://127.0.0.1:3333.If this doesn’t happen automatically you can open a web browser and type in this address.</p>
+  <p>The interface to OpenRefine is accessed via a web browser. When you run Refine normally this should open a window in your default web browser pointing at the address <a href="http://127.0.0.1:3333">http://127.0.0.1:3333</a>.If this doesn’t happen automatically you can open a web browser and type in this address.</p>
   <h4 id="getting-help">Getting Help</h3>
   <p>If you encounter problems installing or running OpenRefine, a good source of support is <a href="https://groups.google.com/forum/?fromgroups#!forum/openrefine">the OpenRefine mailing list and forum</a></p>
   <p>If you are installing OpenRefine on Windows, you may want to check the thread on <a href="https://groups.google.com/forum/?fromgroups#!searchin/openrefine/64-bit%7Csort:date/openrefine/vUzqJqJ-sAA/Tb2Om9wvaqgJ">Installing OpenRefine on Windows 7</a></p>
